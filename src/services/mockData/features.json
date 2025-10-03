@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 1,
+    "icon": "FileText",
+    "title": "Invoice Generation",
+    "description": "Create professional invoices instantly with customizable templates and automated numbering"
+  },
+  {
+    "Id": 2,
+    "icon": "RefreshCw",
+    "title": "Recurring Billing",
+    "description": "Automate subscription payments and recurring invoices with flexible scheduling options"
+  },
+  {
+    "Id": 3,
+    "icon": "CreditCard",
+    "title": "Payment Processing",
+    "description": "Accept multiple payment methods including cards, ACH, and digital wallets seamlessly"
+  },
+  {
+    "Id": 4,
+    "icon": "Globe",
+    "title": "Multi-Currency Support",
+    "description": "Bill clients in their local currency with automatic exchange rate updates"
+  },
+  {
+    "Id": 5,
+    "icon": "TrendingUp",
+    "title": "Real-Time Analytics",
+    "description": "Track revenue, payment trends, and financial metrics with interactive dashboards"
+  },
+  {
+    "Id": 6,
+    "icon": "Bell",
+    "title": "Payment Reminders",
+    "description": "Automated email reminders for overdue invoices and upcoming payments"
+  },
+  {
+    "Id": 7,
+    "icon": "Shield",
+    "title": "Bank-Level Security",
+    "description": "PCI compliant encryption and secure data storage for complete peace of mind"
+  },
+  {
+    "Id": 8,
+    "icon": "Zap",
+    "title": "Integrations",
+    "description": "Connect seamlessly with 100+ popular apps including accounting and CRM tools"
+  }
+]

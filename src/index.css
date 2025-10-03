@@ -1,0 +1,42 @@
+@import "react-toastify/dist/ReactToastify.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
+  }
+  
+  .bg-gradient-secondary {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  }
+}
+
+.Toastify__toast-container {
+  @apply !z-[9999];
+}
+
+.Toastify__toast {
+  @apply !rounded-lg !shadow-xl !min-h-[60px] !px-4 !py-3;
+}
+
+.Toastify__toast-body {
+  @apply !p-0 !text-sm;
+}
+
+.Toastify__progress-bar {
+  @apply !h-1;
+}

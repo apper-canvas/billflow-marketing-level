@@ -1,0 +1,29 @@
+[
+  {
+    "Id": 1,
+    "category": "Product",
+    "links": [
+      { "Id": 1, "label": "Features", "href": "#features" },
+      { "Id": 2, "label": "Pricing", "href": "#pricing" },
+      { "Id": 3, "label": "Integrations", "href": "#integrations" }
+    ]
+  },
+  {
+    "Id": 2,
+    "category": "Company",
+    "links": [
+      { "Id": 4, "label": "About", "href": "#about" },
+      { "Id": 5, "label": "Blog", "href": "#blog" },
+      { "Id": 6, "label": "Contact", "href": "#contact" }
+    ]
+  },
+  {
+    "Id": 3,
+    "category": "Support",
+    "links": [
+      { "Id": 7, "label": "Help Center", "href": "#support" },
+      { "Id": 8, "label": "Terms", "href": "#terms" },
+      { "Id": 9, "label": "Privacy", "href": "#privacy" }
+    ]
+  }
+]
