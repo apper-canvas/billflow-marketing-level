@@ -1,10 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import HomePage from "@/components/pages/HomePage";
+import { router } from "@/router";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <ToastContainer
         position="top-right"
         autoClose={3000}
@@ -17,10 +17,8 @@ function App() {
         pauseOnHover
         theme="light"
       />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </BrowserRouter>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

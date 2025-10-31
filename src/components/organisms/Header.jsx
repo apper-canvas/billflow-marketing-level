@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "@/components/atoms/Container";
 import Logo from "@/components/atoms/Logo";
@@ -6,34 +5,8 @@ import Button from "@/components/atoms/Button";
 import NavLink from "@/components/molecules/NavLink";
 import ApperIcon from "@/components/ApperIcon";
 import { cn } from "@/utils/cn";
-import navigationService from "@/services/api/navigationService";
 
-export default function Header() {
-  const [navLinks, setNavLinks] = useState([]);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    loadNavigation();
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const loadNavigation = async () => {
-    try {
-      const data = await navigationService.getAll();
-      setNavLinks(data);
-    } catch (error) {
-      console.error("Failed to load navigation:", error);
-    }
-  };
+export default function Header({ navLinks, isScrolled, isMobileMenuOpen, setIsMobileMenuOpen }) {
 
   const handleMobileNavClick = () => {
     setIsMobileMenuOpen(false);

@@ -1,25 +1,9 @@
-import { useState, useEffect } from "react";
 import Container from "@/components/atoms/Container";
 import Logo from "@/components/atoms/Logo";
 import FooterColumn from "@/components/molecules/FooterColumn";
 import ApperIcon from "@/components/ApperIcon";
-import footerService from "@/services/api/footerService";
 
-export default function Footer() {
-  const [footerData, setFooterData] = useState([]);
-
-  useEffect(() => {
-    loadFooterData();
-  }, []);
-
-  const loadFooterData = async () => {
-    try {
-      const data = await footerService.getAll();
-      setFooterData(data);
-    } catch (error) {
-      console.error("Failed to load footer data:", error);
-    }
-  };
+export default function Footer({ footerData }) {
 
   return (
     <footer className="bg-gray-900 text-white py-16">
