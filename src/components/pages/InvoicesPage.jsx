@@ -174,10 +174,10 @@ export default function InvoicesPage() {
                         {format(new Date(invoice.issueDate), 'MMM dd, yyyy')}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {format(new Date(invoice.dueDate), 'MMM dd, yyyy')}
+{format(new Date(invoice.dueDate), 'MMM dd, yyyy')}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                        ${invoice.total.toFixed(2)}
+                        ${(invoice.total || invoice.amount || 0).toFixed(2)}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <span className={cn(

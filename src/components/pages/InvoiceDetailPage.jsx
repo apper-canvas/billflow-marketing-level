@@ -290,12 +290,12 @@ export default function InvoiceDetailPage() {
                   {invoice.items.map((item, index) => (
                     <tr key={index}>
                       <td className="px-4 py-3 text-sm text-gray-900">{item.description}</td>
-                      <td className="px-4 py-3 text-sm text-gray-900 text-right">{item.quantity}</td>
+<td className="px-4 py-3 text-sm text-gray-900 text-right">{item.quantity}</td>
                       <td className="px-4 py-3 text-sm text-gray-900 text-right">
-                        ${item.unitPrice.toFixed(2)}
+                        ${(item.unitPrice || 0).toFixed(2)}
                       </td>
                       <td className="px-4 py-3 text-sm font-medium text-gray-900 text-right">
-                        ${(item.quantity * item.unitPrice).toFixed(2)}
+                        ${((item.quantity || 0) * (item.unitPrice || 0)).toFixed(2)}
                       </td>
                     </tr>
                   ))}
@@ -306,25 +306,25 @@ export default function InvoiceDetailPage() {
 
           <div className="flex justify-end mb-8">
             <div className="w-full lg:w-1/2 space-y-2">
-              <div className="flex justify-between text-sm">
+<div className="flex justify-between text-sm">
                 <span className="text-gray-600">Subtotal:</span>
-                <span className="font-medium">${invoice.subtotal.toFixed(2)}</span>
+                <span className="font-medium">${(invoice.subtotal || 0).toFixed(2)}</span>
               </div>
-              {invoice.taxRate > 0 && (
+              {(invoice.taxRate || 0) > 0 && (
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-600">Tax ({invoice.taxRate}%):</span>
-                  <span className="font-medium">${invoice.taxAmount.toFixed(2)}</span>
+                  <span className="font-medium">${(invoice.taxAmount || 0).toFixed(2)}</span>
                 </div>
               )}
-              {invoice.discountAmount > 0 && (
+              {(invoice.discountAmount || 0) > 0 && (
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-600">Discount:</span>
-                  <span className="font-medium text-red-600">-${invoice.discountAmount.toFixed(2)}</span>
+                  <span className="font-medium text-red-600">-${(invoice.discountAmount || 0).toFixed(2)}</span>
                 </div>
               )}
               <div className="flex justify-between text-lg font-bold pt-2 border-t-2 border-gray-300">
                 <span>Total:</span>
-                <span className="text-primary">${invoice.total.toFixed(2)}</span>
+                <span className="text-primary">${(invoice.total || invoice.amount || 0).toFixed(2)}</span>
               </div>
             </div>
           </div>
