@@ -28,8 +28,8 @@ export default function Header({ navLinks, isScrolled, isMobileMenuOpen, setIsMo
 
 {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <NavLink key={link.Id} to={link.path}>
+{navLinks.map((link) => (
+              <NavLink key={link.Id} to={link.href}>
                 {link.label}
               </NavLink>
             ))}
@@ -79,10 +79,10 @@ export default function Header({ navLinks, isScrolled, isMobileMenuOpen, setIsMo
                 </button>
               </div>
 <div className="flex flex-col gap-6">
-                {navLinks.map((link) => (
+{navLinks.map((link) => (
                   <Link
                     key={link.Id}
-                    to={link.path}
+                    to={link.href}
                     onClick={handleMobileNavClick}
                     className="text-lg font-medium text-gray-700 hover:text-primary transition-colors"
                   >
