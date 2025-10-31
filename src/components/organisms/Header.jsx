@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import Container from "@/components/atoms/Container";
 import Logo from "@/components/atoms/Logo";
 import Button from "@/components/atoms/Button";
@@ -25,10 +26,10 @@ export default function Header({ navLinks, isScrolled, isMobileMenuOpen, setIsMo
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <Logo />
 
-          {/* Desktop Navigation */}
+{/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <NavLink key={link.Id} href={link.href}>
+              <NavLink key={link.Id} to={link.path}>
                 {link.label}
               </NavLink>
             ))}
@@ -77,16 +78,16 @@ export default function Header({ navLinks, isScrolled, isMobileMenuOpen, setIsMo
                   <ApperIcon name="X" size={24} />
                 </button>
               </div>
-              <div className="flex flex-col gap-6">
+<div className="flex flex-col gap-6">
                 {navLinks.map((link) => (
-                  <a
+                  <Link
                     key={link.Id}
-                    href={link.href}
+                    to={link.path}
                     onClick={handleMobileNavClick}
                     className="text-lg font-medium text-gray-700 hover:text-primary transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
                 <Button size="md" className="mt-4 w-full">
                   Get Started
