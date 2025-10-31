@@ -16,5 +16,13 @@
     "label": "Clients",
     "href": "/clients",
     "isExternal": false
-  }
-]
+  },
+{
+      "Id": 3,
+      "label": "Features",
+      "path": "/features"
+    },
+    {
+      "Id": 4,
+      "label": "Contact",
+      "path": "/contact"}]
