@@ -2,49 +2,171 @@
   {
     "Id": 1,
     "icon": "FileText",
-    "title": "Invoice Generation",
-    "description": "Create professional invoices instantly with customizable templates and automated numbering"
+    "title": "Invoice Management",
+    "category": "Core Features",
+    "description": "Create professional invoices instantly with customizable templates and automated numbering",
+    "detailedDescription": "BillFlow's invoice management system gives you complete control over your billing process. Design beautiful, branded invoices with our drag-and-drop editor, automatically generate sequential invoice numbers, and save time with smart templates that remember your most-used items and services.",
+    "benefits": [
+      "Customizable invoice templates with your branding",
+      "Automatic invoice numbering and tracking",
+      "Save frequently used items and services",
+      "Professional PDF generation",
+      "Multiple invoice layouts to choose from",
+      "Automatic tax calculations"
+    ],
+    "mockupImage": "invoice-screenshot.png"
   },
   {
     "Id": 2,
-    "icon": "RefreshCw",
-    "title": "Recurring Billing",
-    "description": "Automate subscription payments and recurring invoices with flexible scheduling options"
+    "icon": "DollarSign",
+    "title": "Payment Tracking",
+    "category": "Core Features",
+    "description": "Monitor payment status in real-time and never miss a payment again",
+    "detailedDescription": "Stay on top of your cash flow with comprehensive payment tracking. See which invoices are paid, pending, or overdue at a glance. Get instant notifications when clients make payments, and track payment history for complete financial visibility.",
+    "benefits": [
+      "Real-time payment status updates",
+      "Instant payment notifications",
+      "Complete payment history logs",
+      "Overdue invoice alerts",
+      "Partial payment tracking",
+      "Payment method recording"
+    ],
+    "mockupImage": "payment-tracking.png"
   },
   {
     "Id": 3,
-    "icon": "CreditCard",
-    "title": "Payment Processing",
-    "description": "Accept multiple payment methods including cards, ACH, and digital wallets seamlessly"
+    "icon": "Users",
+    "title": "Client Management",
+    "category": "Core Features",
+    "description": "Organize and manage all your client information in one central location",
+    "detailedDescription": "Build stronger client relationships with our comprehensive client management system. Store contact details, billing preferences, payment history, and notes all in one place. Segment clients by industry, location, or custom tags for targeted communications.",
+    "benefits": [
+      "Centralized client database",
+      "Custom fields for client data",
+      "Client payment history",
+      "Communication logs",
+      "Client segmentation and tagging",
+      "Quick client search and filtering"
+    ],
+    "mockupImage": "client-management.png"
   },
   {
     "Id": 4,
-    "icon": "Globe",
-    "title": "Multi-Currency Support",
-    "description": "Bill clients in their local currency with automatic exchange rate updates"
+    "icon": "RefreshCw",
+    "title": "Recurring Billing",
+    "category": "Automation",
+    "description": "Automate subscription payments and recurring invoices with flexible scheduling",
+    "detailedDescription": "Set up automatic recurring billing for your subscription-based services. Configure weekly, monthly, quarterly, or custom billing cycles. BillFlow automatically generates and sends invoices, processes payments, and handles failed payment retries.",
+    "benefits": [
+      "Flexible billing frequency options",
+      "Automatic invoice generation",
+      "Smart payment retry logic",
+      "Subscription lifecycle management",
+      "Prorated billing support",
+      "Cancellation and pause handling"
+    ],
+    "mockupImage": "recurring-billing.png"
   },
   {
     "Id": 5,
-    "icon": "TrendingUp",
-    "title": "Real-Time Analytics",
-    "description": "Track revenue, payment trends, and financial metrics with interactive dashboards"
+    "icon": "BarChart3",
+    "title": "Reports & Analytics",
+    "category": "Insights",
+    "description": "Track revenue, payment trends, and financial metrics with interactive dashboards",
+    "detailedDescription": "Make data-driven decisions with powerful analytics and reporting. View revenue trends, identify your best-paying clients, track outstanding invoices, and generate custom reports for any time period. Export data to Excel or PDF for accounting and tax purposes.",
+    "benefits": [
+      "Real-time revenue dashboards",
+      "Aging reports for receivables",
+      "Client profitability analysis",
+      "Payment trend visualization",
+      "Custom date range reporting",
+      "Export to Excel and PDF"
+    ],
+    "mockupImage": "analytics-dashboard.png"
   },
   {
     "Id": 6,
-    "icon": "Bell",
-    "title": "Payment Reminders",
-    "description": "Automated email reminders for overdue invoices and upcoming payments"
+    "icon": "CreditCard",
+    "title": "Payment Processing",
+    "category": "Payments",
+    "description": "Accept multiple payment methods including cards, ACH, and digital wallets",
+    "detailedDescription": "Get paid faster with integrated payment processing. Accept credit cards, debit cards, ACH bank transfers, and popular digital wallets like Apple Pay and Google Pay. Secure payment links make it easy for clients to pay online with just a few clicks.",
+    "benefits": [
+      "Credit and debit card payments",
+      "ACH bank transfers",
+      "Digital wallet support",
+      "One-click payment links",
+      "PCI compliant security",
+      "Competitive processing rates"
+    ],
+    "mockupImage": "payment-processing.png"
   },
   {
     "Id": 7,
-    "icon": "Shield",
-    "title": "Bank-Level Security",
-    "description": "PCI compliant encryption and secure data storage for complete peace of mind"
+    "icon": "Bell",
+    "title": "Payment Reminders",
+    "category": "Automation",
+    "description": "Automated email reminders for overdue invoices and upcoming payments",
+    "detailedDescription": "Never chase payments manually again. Configure automatic reminder emails that go out before, on, and after invoice due dates. Customize reminder schedules and message templates to maintain professionalism while ensuring timely payments.",
+    "benefits": [
+      "Customizable reminder schedules",
+      "Professional email templates",
+      "Before and after due date reminders",
+      "Escalation sequences",
+      "Client-specific reminder settings",
+      "Delivery tracking and reporting"
+    ],
+    "mockupImage": "payment-reminders.png"
   },
   {
     "Id": 8,
+    "icon": "Shield",
+    "title": "Bank-Level Security",
+    "category": "Security",
+    "description": "PCI compliant encryption and secure data storage for complete peace of mind",
+    "detailedDescription": "Your financial data is protected with enterprise-grade security. We use 256-bit SSL encryption, maintain PCI DSS Level 1 compliance, and conduct regular security audits. All payment information is tokenized and never stored on our servers.",
+    "benefits": [
+      "256-bit SSL encryption",
+      "PCI DSS Level 1 compliant",
+      "Regular security audits",
+      "Two-factor authentication",
+      "Tokenized payment data",
+      "Automatic security updates"
+    ],
+    "mockupImage": "security-features.png"
+  },
+  {
+    "Id": 9,
+    "icon": "Globe",
+    "title": "Multi-Currency Support",
+    "category": "Global",
+    "description": "Bill clients in their local currency with automatic exchange rate updates",
+    "detailedDescription": "Expand your business globally with support for 150+ currencies. Automatically convert amounts at current exchange rates, or lock in custom rates for specific clients. Generate invoices in any currency and accept payments in your preferred currency.",
+    "benefits": [
+      "150+ supported currencies",
+      "Real-time exchange rates",
+      "Custom rate locking",
+      "Multi-currency reporting",
+      "Currency-specific formatting",
+      "Automatic conversion tracking"
+    ],
+    "mockupImage": "multi-currency.png"
+  },
+  {
+    "Id": 10,
     "icon": "Zap",
     "title": "Integrations",
-    "description": "Connect seamlessly with 100+ popular apps including accounting and CRM tools"
+    "category": "Connectivity",
+    "description": "Connect seamlessly with 100+ popular apps including accounting and CRM tools",
+    "detailedDescription": "BillFlow integrates with the tools you already use. Sync with QuickBooks, Xero, and other accounting platforms. Connect your CRM to keep client data synchronized. Use Zapier for custom integrations with 3,000+ apps.",
+    "benefits": [
+      "Direct accounting software sync",
+      "CRM platform integration",
+      "Zapier connectivity",
+      "API access for custom integrations",
+      "Webhook support",
+      "Data export in multiple formats"
+    ],
+    "mockupImage": "integrations.png"
   }
 ]

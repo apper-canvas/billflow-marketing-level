@@ -1,6 +1,20 @@
 [
-  { "Id": 1, "label": "Home", "path": "/", "icon": "Home" },
-  { "Id": 2, "label": "Clients", "path": "/clients", "icon": "Users" },
-  { "Id": 3, "label": "Features", "path": "/#features", "icon": "Sparkles" },
-  { "Id": 4, "label": "Contact", "path": "/#contact", "icon": "Mail" }
+  {
+    "Id": 1,
+    "label": "Home",
+    "href": "/",
+    "isExternal": false
+  },
+  {
+    "Id": 2,
+    "label": "Features",
+    "href": "/features",
+    "isExternal": false
+  },
+  {
+    "Id": 3,
+    "label": "Clients",
+    "href": "/clients",
+    "isExternal": false
+  }
 ]

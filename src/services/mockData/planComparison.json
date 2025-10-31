@@ -1,0 +1,222 @@
+{
+  "plans": [
+    {
+      "Id": 1,
+      "name": "Starter",
+      "price": 15,
+      "billingPeriod": "month",
+      "description": "Perfect for freelancers and solo entrepreneurs",
+      "popular": false,
+      "features": {
+        "invoices": "Up to 50 invoices/month",
+        "clients": "Unlimited clients",
+        "paymentProcessing": true,
+        "recurringBilling": false,
+        "multiCurrency": false,
+        "analytics": "Basic reports",
+        "reminders": true,
+        "integrations": "3 integrations",
+        "support": "Email support",
+        "users": "1 user"
+      }
+    },
+    {
+      "Id": 2,
+      "name": "Professional",
+      "price": 39,
+      "billingPeriod": "month",
+      "description": "For growing businesses and small teams",
+      "popular": true,
+      "features": {
+        "invoices": "Unlimited invoices",
+        "clients": "Unlimited clients",
+        "paymentProcessing": true,
+        "recurringBilling": true,
+        "multiCurrency": true,
+        "analytics": "Advanced reports",
+        "reminders": true,
+        "integrations": "Unlimited integrations",
+        "support": "Priority email & chat",
+        "users": "Up to 5 users"
+      }
+    },
+    {
+      "Id": 3,
+      "name": "Business",
+      "price": 99,
+      "billingPeriod": "month",
+      "description": "For established businesses with complex needs",
+      "popular": false,
+      "features": {
+        "invoices": "Unlimited invoices",
+        "clients": "Unlimited clients",
+        "paymentProcessing": true,
+        "recurringBilling": true,
+        "multiCurrency": true,
+        "analytics": "Custom reports & dashboards",
+        "reminders": true,
+        "integrations": "Unlimited integrations + API access",
+        "support": "Phone, email & chat + account manager",
+        "users": "Unlimited users"
+      }
+    }
+  ],
+  "featureCategories": [
+    {
+      "name": "Core Features",
+      "features": [
+        {
+          "name": "Monthly Invoices",
+          "starter": "50",
+          "professional": "Unlimited",
+          "business": "Unlimited"
+        },
+        {
+          "name": "Client Management",
+          "starter": true,
+          "professional": true,
+          "business": true
+        },
+        {
+          "name": "Payment Processing",
+          "starter": true,
+          "professional": true,
+          "business": true
+        },
+        {
+          "name": "Custom Branding",
+          "starter": true,
+          "professional": true,
+          "business": true
+        }
+      ]
+    },
+    {
+      "name": "Automation",
+      "features": [
+        {
+          "name": "Recurring Billing",
+          "starter": false,
+          "professional": true,
+          "business": true
+        },
+        {
+          "name": "Payment Reminders",
+          "starter": true,
+          "professional": true,
+          "business": true
+        },
+        {
+          "name": "Late Fee Automation",
+          "starter": false,
+          "professional": true,
+          "business": true
+        }
+      ]
+    },
+    {
+      "name": "Reporting & Analytics",
+      "features": [
+        {
+          "name": "Basic Reports",
+          "starter": true,
+          "professional": false,
+          "business": false
+        },
+        {
+          "name": "Advanced Analytics",
+          "starter": false,
+          "professional": true,
+          "business": true
+        },
+        {
+          "name": "Custom Dashboards",
+          "starter": false,
+          "professional": false,
+          "business": true
+        },
+        {
+          "name": "Data Export",
+          "starter": true,
+          "professional": true,
+          "business": true
+        }
+      ]
+    },
+    {
+      "name": "Global Features",
+      "features": [
+        {
+          "name": "Multi-Currency",
+          "starter": false,
+          "professional": true,
+          "business": true
+        },
+        {
+          "name": "Multiple Languages",
+          "starter": false,
+          "professional": true,
+          "business": true
+        },
+        {
+          "name": "Tax Compliance",
+          "starter": "Basic",
+          "professional": "Advanced",
+          "business": "Advanced + VAT"
+        }
+      ]
+    },
+    {
+      "name": "Integrations",
+      "features": [
+        {
+          "name": "Third-Party Apps",
+          "starter": "3 apps",
+          "professional": "Unlimited",
+          "business": "Unlimited"
+        },
+        {
+          "name": "API Access",
+          "starter": false,
+          "professional": false,
+          "business": true
+        },
+        {
+          "name": "Webhooks",
+          "starter": false,
+          "professional": true,
+          "business": true
+        }
+      ]
+    },
+    {
+      "name": "Support & Team",
+      "features": [
+        {
+          "name": "User Seats",
+          "starter": "1",
+          "professional": "5",
+          "business": "Unlimited"
+        },
+        {
+          "name": "Support Channels",
+          "starter": "Email",
+          "professional": "Email & Chat",
+          "business": "Phone, Email & Chat"
+        },
+        {
+          "name": "Dedicated Account Manager",
+          "starter": false,
+          "professional": false,
+          "business": true
+        },
+        {
+          "name": "Onboarding Assistance",
+          "starter": false,
+          "professional": true,
+          "business": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "name": "Sarah Johnson",
+    "role": "Founder & CEO",
+    "company": "DesignHub Studio",
+    "avatar": "https://i.pravatar.cc/150?img=1",
+    "rating": 5,
+    "content": "BillFlow has completely transformed how we handle billing. What used to take hours now takes minutes. The automated recurring billing feature alone has saved us countless hours each month.",
+    "featured": true
+  },
+  {
+    "Id": 2,
+    "name": "Michael Chen",
+    "role": "Freelance Developer",
+    "company": "Chen Consulting",
+    "avatar": "https://i.pravatar.cc/150?img=12",
+    "rating": 5,
+    "content": "As a freelancer, getting paid on time was always a challenge. BillFlow's payment reminders and easy payment links have reduced my outstanding invoices by 70%. Game changer!",
+    "featured": true
+  },
+  {
+    "Id": 3,
+    "name": "Emily Rodriguez",
+    "role": "Operations Manager",
+    "company": "CloudSync Solutions",
+    "avatar": "https://i.pravatar.cc/150?img=5",
+    "rating": 5,
+    "content": "The reporting and analytics features give us incredible visibility into our cash flow. We can now forecast revenue accurately and make better business decisions.",
+    "featured": true
+  },
+  {
+    "Id": 4,
+    "name": "David Park",
+    "role": "Marketing Director",
+    "company": "GrowthLab Agency",
+    "avatar": "https://i.pravatar.cc/150?img=13",
+    "rating": 4,
+    "content": "Love the professional invoice templates and the ability to customize them with our branding. Our clients are impressed with how polished everything looks.",
+    "featured": false
+  },
+  {
+    "Id": 5,
+    "name": "Jennifer Martinez",
+    "role": "Small Business Owner",
+    "company": "Martinez Photography",
+    "avatar": "https://i.pravatar.cc/150?img=9",
+    "rating": 5,
+    "content": "Setting up was incredibly easy - I was sending my first invoice within 15 minutes. The interface is intuitive and the support team is fantastic.",
+    "featured": false
+  },
+  {
+    "Id": 6,
+    "name": "Robert Thompson",
+    "role": "CFO",
+    "company": "TechVentures Inc",
+    "avatar": "https://i.pravatar.cc/150?img=14",
+    "rating": 5,
+    "content": "The multi-currency support and international payment options have allowed us to expand globally without any billing headaches. Essential for our business.",
+    "featured": true
+  }
+]
