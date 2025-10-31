@@ -4,6 +4,10 @@ import Layout from "@/components/organisms/Layout";
 
 const HomePage = lazy(() => import("@/components/pages/HomePage"));
 const NotFound = lazy(() => import("@/components/pages/NotFound"));
+const ClientsPage = lazy(() => import("@/components/pages/ClientsPage"));
+const AddClientPage = lazy(() => import("@/components/pages/AddClientPage"));
+const EditClientPage = lazy(() => import("@/components/pages/EditClientPage"));
+const ClientDetailPage = lazy(() => import("@/components/pages/ClientDetailPage"));
 
 const LoadingFallback = () => (
   <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -18,6 +22,10 @@ const LoadingFallback = () => (
 
 const mainRoutes = [
   { path: "", index: true, element: <Suspense fallback={<LoadingFallback />}><HomePage /></Suspense> },
+  { path: "clients", element: <Suspense fallback={<LoadingFallback />}><ClientsPage /></Suspense> },
+  { path: "clients/new", element: <Suspense fallback={<LoadingFallback />}><AddClientPage /></Suspense> },
+  { path: "clients/edit/:id", element: <Suspense fallback={<LoadingFallback />}><EditClientPage /></Suspense> },
+  { path: "clients/:id", element: <Suspense fallback={<LoadingFallback />}><ClientDetailPage /></Suspense> },
   { path: "*", element: <Suspense fallback={<LoadingFallback />}><NotFound /></Suspense> }
 ];
 

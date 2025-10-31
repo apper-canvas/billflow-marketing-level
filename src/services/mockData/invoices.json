@@ -1,0 +1,77 @@
+[
+  {
+    "Id": 1,
+    "clientId": 1,
+    "invoiceNumber": "INV-2024-001",
+    "amount": 5240.00,
+    "status": "Paid",
+    "issueDate": "2024-01-15",
+    "dueDate": "2024-02-14",
+    "items": [
+      { "description": "Web Development Services", "quantity": 40, "unitPrice": 120.00 },
+      { "description": "Design Consultation", "quantity": 8, "unitPrice": 80.00 }
+    ]
+  },
+  {
+    "Id": 2,
+    "clientId": 1,
+    "invoiceNumber": "INV-2024-015",
+    "amount": 3200.00,
+    "status": "Pending",
+    "issueDate": "2024-02-01",
+    "dueDate": "2024-03-02",
+    "items": [
+      { "description": "Monthly Maintenance", "quantity": 1, "unitPrice": 3200.00 }
+    ]
+  },
+  {
+    "Id": 3,
+    "clientId": 2,
+    "invoiceNumber": "INV-2024-008",
+    "amount": 12500.00,
+    "status": "Paid",
+    "issueDate": "2024-01-20",
+    "dueDate": "2024-03-05",
+    "items": [
+      { "description": "Custom Software Development", "quantity": 80, "unitPrice": 150.00 },
+      { "description": "Testing & QA", "quantity": 10, "unitPrice": 50.00 }
+    ]
+  },
+  {
+    "Id": 4,
+    "clientId": 2,
+    "invoiceNumber": "INV-2024-022",
+    "amount": 8750.00,
+    "status": "Pending",
+    "issueDate": "2024-02-15",
+    "dueDate": "2024-04-01",
+    "items": [
+      { "description": "API Integration", "quantity": 50, "unitPrice": 175.00 }
+    ]
+  },
+  {
+    "Id": 5,
+    "clientId": 3,
+    "invoiceNumber": "INV-2024-005",
+    "amount": 15600.00,
+    "status": "Overdue",
+    "issueDate": "2024-01-05",
+    "dueDate": "2024-02-04",
+    "items": [
+      { "description": "Enterprise Consulting", "quantity": 120, "unitPrice": 130.00 }
+    ]
+  },
+  {
+    "Id": 6,
+    "clientId": 3,
+    "invoiceNumber": "INV-2024-018",
+    "amount": 9200.00,
+    "status": "Paid",
+    "issueDate": "2024-02-10",
+    "dueDate": "2024-03-11",
+    "items": [
+      { "description": "System Architecture Review", "quantity": 40, "unitPrice": 200.00 },
+      { "description": "Documentation", "quantity": 12, "unitPrice": 100.00 }
+    ]
+  }
+]
