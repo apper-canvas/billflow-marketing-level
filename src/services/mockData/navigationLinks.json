@@ -17,12 +17,16 @@
     "href": "/clients",
     "isExternal": false
   },
-{
-      "Id": 3,
-      "label": "Features",
-      "path": "/features"
-    },
-    {
-      "Id": 4,
-      "label": "Contact",
-      "path": "/contact"}]
+  {
+    "Id": 4,
+    "label": "Invoices",
+    "href": "/invoices",
+    "isExternal": false
+  },
+  {
+    "Id": 5,
+    "label": "Contact",
+    "href": "/contact",
+    "isExternal": false
+  }
+]
